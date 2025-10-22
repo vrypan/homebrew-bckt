@@ -1,19 +1,19 @@
 class Bckt < Formula
   desc "bckt is an opinionated but flexible static site generator for blogs"
   homepage "https://github.com/vrypan/bckt"
-  version "0.5.3"
+  version "0.6.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/vrypan/bckt/releases/download/v0.5.3/bckt-aarch64-apple-darwin.tar.xz"
-    sha256 "2ba3a186388aa3a41300290c6047691ce9c421b7f429e7e9538c82afdde1a52c"
+    url "https://github.com/vrypan/bckt/releases/download/v0.6.0/bckt-aarch64-apple-darwin.tar.xz"
+    sha256 "7f843bb83c33948ce2b76b73464680d19893eb9cd13fc6b683785b717c58ca4e"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/vrypan/bckt/releases/download/v0.5.3/bckt-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d3a5d72e7388acadb0b2ed04fc0dc295350fe2e1b20e290aba782bc4496fa34a"
+      url "https://github.com/vrypan/bckt/releases/download/v0.6.0/bckt-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "24fce788c211f686d813880b033ef8b0a2f4041c92673d2a9ba387c9e9a27b96"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vrypan/bckt/releases/download/v0.5.3/bckt-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "01582fb2a0eefff7ca900b4e0ef3fd12bc431334a1780cc759fd1e2acd35a57a"
+      url "https://github.com/vrypan/bckt/releases/download/v0.6.0/bckt-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "dd75695224677b330cf14af2d49b2351faac75fc016a76d7214b4f76ff3f373c"
     end
   end
   license "MIT"
